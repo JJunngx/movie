@@ -2,9 +2,9 @@ import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 
 const API_KEY = "211caba8f505c4c2098b87270ac30332";
-
+const http = `http://localhost:5000`;
 const requests = {
-  fetchtmdb: `http://localhost:5000/api/movies`,
+  fetchtmdb: `${http}/api/movies`,
   fetchTrending: `/trending`,
   fetchTopRated: `/top-rate`,
 };
@@ -46,7 +46,7 @@ const useHttp = () => {
   const fetchDataTrailer = async (id) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/movies/video?filmId=${id}&token=RYoOcWM4JW`,
+        `${http}/api/movies/video?filmId=${id}&token=RYoOcWM4JW`,
         { filmId: id },
         {
           headers: {
@@ -68,7 +68,7 @@ const useHttp = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:5000/api/movies/discover?genre=12&token=RYoOcWM4JW"
+        `${http}/api/movies/discover?genre=12&token=RYoOcWM4JW`
       );
 
       setGenre(response.data);
