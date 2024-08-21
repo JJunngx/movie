@@ -7,6 +7,8 @@
 -dùng để xem phim
 -tìm kiếm phim muốn xem
 
+## DEMO Link : https://movie-client-v9sd.onrender.com/
+
 ## Deployment Guide (on local)
 
 ### 1. Clone Repository
