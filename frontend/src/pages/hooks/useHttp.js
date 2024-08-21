@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 
 const API_KEY = "211caba8f505c4c2098b87270ac30332";
-const http = `http://localhost:5000`;
+const http = `https://movie-j0g3.onrender.com`;
 const requests = {
   fetchtmdb: `${http}/api/movies`,
   fetchTrending: `/trending`,
