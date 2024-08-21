@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* di chuyển chuột vào sẽ phóng to hình ảnh */
+.scaleImg:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+}
+
+/* Lớp giả custom-scroll */
+.custom-scroll {
+  /* Thiết lập kiểu cuộn ngang */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sizeImg {
+  width: 200px;
+  height: 113px;
+}
+/* Tùy chỉnh giao diện thanh cuộn nếu bạn muốn */
+.custom-scroll::-webkit-scrollbar-track {
+  background: #adb5bd;
+  border-radius: 5px;
+}
+.custom-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #495057; /* Màu của con trỏ thanh cuộn */
+  border-radius: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #212529; /* Màu khi con trỏ di chuột lên */
+  /* border-radius: 5px; */
+}
